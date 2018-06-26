@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>MyApp</title>
+  </head>
+  <body>
+    <% if (user.username !== '') { %>
+      <p style="color: green;">Hello, <%= user.username %></p>
+      <a href="/logout">logout</a>
+    <% } else { %>
+      <a href="/login">login</a>
+    <% } %>

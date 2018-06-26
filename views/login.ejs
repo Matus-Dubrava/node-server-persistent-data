@@ -1,0 +1,21 @@
+<% include header %>
+
+<form method="POST">
+  <fieldset>
+    <legend>Login From</legend>
+    <label for="username">username</label>
+    <input type="text" id="username" name="username" required />
+    <br />
+    <label for="password">password</label>
+    <input type="password" id="password" name="password" required />
+    <br />
+    <input type="submit" value="login" />
+    <% if (error) { %>
+      <p style="color: red;">
+        <%= error %>
+      </p>
+    <% } %>
+  </fieldset>
+</form>
+
+<% include footer %>
